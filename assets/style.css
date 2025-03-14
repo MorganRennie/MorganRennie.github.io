@@ -11,7 +11,7 @@ body {
 }
 
 /* Container for centering and max width */
-.bannerlevel1 {
+#bannerlevel1 {
   max-width: 100%;
   font-family: Arial, sans-serif;
   background-color: #506b76;
@@ -19,7 +19,7 @@ body {
   height: 30px;
 }
 
-.bannerlevel2 {
+#bannerlevel2 {
   max-width: 100%;
   background-color: #cedbe0;
   padding: 4px;
