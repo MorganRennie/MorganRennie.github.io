@@ -8,125 +8,13 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
 
-
-
   <body>
     <!-- Headers-->
-    <headerlevel1>
-      <section id="bannerlevel1">
-        <div class="container">
-          <h1> Morgan Rennie </h1>
-        </div>
-      </section>
-    </headerlevel1>
-  
-    <headerlevel2>
-      <section id="bannerlevel2">
-        <div class="container">
-          <a> Home </a>
-        </div>
-      </section>
-    </headerlevel2>
-    
-    <!-- Home Section -->
-    <section id="home">
+    <header>
       <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>
-          Profiles: <a href="https://www.linkedin.com">LinkedIn</a> |
-          <a href="https://github.com">GitHub</a> |
-          <a href="https://www.tableau.com">Tableau</a>
-        </p>
+        Morgan Rennie
       </div>
-    </section>
-
-    <!-- Tabs Navigation -->
-    <div class="tabs">
-      <button class="tab-button active" onclick="showTab('about')">
-        About Me
-      </button>
-      <button class="tab-button" onclick="showTab('experience')">
-        Experience
-      </button>
-    </div>
-
-    <!-- Tab Content -->
-    <section id="tab-content">
-      <div id="about" class="tab-content active">
-        <h2>About Me</h2>
-       
-        </p>
-      </div>
-
-      <div id="experience" class="tab-content">
-        <h2>Experience</h2>
-
-        <!-- Skills in Bubbles -->
-        <h3>Technical Skills</h3>
-        <div class="skills-bubbles">
-          <span>Tableau (Desktop, Server, Cloud, Prep)</span>
-          <span>Microsoft Power BI</span>
-          <span>SQL (Snowflake, Oracle, MySQL, PostgreSQL)</span>
-          <span>Alteryx (Designer, Server)</span>
-          <span>ETL/ELT</span>
-          <span>DBT</span>
-          <span>Python</span>
-          <span>GitHub</span>
-          <span>AWS</span>
-          <span>Data Cleansing & Automation</span>
-        </div>
-
-        <h3>Data Analytics and Visualisation Consultant</h3>
-        <p>
-          <strong>The Information Lab, The Data School</strong> | Dec 2022 -
-          Present
-        </p>
-        <ul>
-          <li>
-            Led an 8-member team to deliver dashboards for an international
-            banking client, improving decision-making.
-          </li>
-          <li>
-            Awarded "Viz of the Day" by Tableau for exceptional visual design.
-          </li>
-          <li>
-            Developed a Sustainable Development Goals (SDG) dashboard presented
-            at the United Nations.
-          </li>
-        </ul>
-
-        <h3>Advanced Analytics and Reporting Analyst</h3>
-        <p>
-          <strong>International Airline Group (IAG) Cargo</strong> | May 2023 -
-          Present
-        </p>
-        <ul>
-          <li>
-            Streamlined data workflows, reducing errors by 32% and improving
-            query runtime by 90%.
-          </li>
-          <li>
-            Designed Tableau dashboards that enhanced operational insights and
-            decision-making.
-          </li>
-        </ul>
-
-        <h3>Business Intelligence Analyst</h3>
-        <p>
-          <strong>Paramount Pictures/ViacomCBS</strong> | Apr 2023 - Apr 2024
-        </p>
-        <ul>
-          <li>
-            Automated data extraction into Snowflake, saving 0.6 FTE annually.
-          </li>
-          <li>
-            Redesigned Tableau dashboards, improving user experience and saving
-            1.2 FTE annually.
-          </li>
-        </ul>
-      </div>
-    </section>
-
+    </header>
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -134,23 +22,7 @@
       </div>
     </footer>
 
-    <script>
-      // Function to show the selected tab
-      function showTab(tabName) {
-        // Hide all tab content
-        const tabContents = document.querySelectorAll(".tab-content");
-        tabContents.forEach((content) => content.classList.remove("active"));
-
-        // Remove active class from all tab buttons
-        const tabButtons = document.querySelectorAll(".tab-button");
-        tabButtons.forEach((button) => button.classList.remove("active"));
-
-        // Show the selected tab and add the active class to the button
-        document.getElementById(tabName).classList.add("active");
-        document
-          .querySelector(`button[onclick="showTab('${tabName}')"]`)
-          .classList.add("active");
-      }
+  
     </script>
   </body>
 </html>

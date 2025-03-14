@@ -12,26 +12,19 @@ body {
 }
 
 /* Container for centering and max width */
-bannerlevel1 {
-  width: 100%;
-  font-family: Arial, sans-serif;
-  background-color: #506b76;
-  text-align: left;
-  height: 30px;
-}
-
-bannerlevel2 {
-  width: 100%;
-  background-color: #cedbe0;
-  font-family: Arial, sans-serif;
-  height: 20px;
-  text-align: right;
-}
-
-/* Container for centering and max width */
 .container {
   max-width: 100%; /* Restricts the width for large screens */
   margin: 0 auto; /* Centers the content */
+}
+
+header {
+  background-color: #506b76;
+  text-align: left;
+  width: 100%;
+  padding: 4px;
+  padding-left: 10px;
+  height: 40px;
+  font-size: 16px;
 }
 
 /* Footer styles */
@@ -44,45 +37,4 @@ footer {
   bottom: 0;
   width: 100%;
   margin-top: auto; /* Ensures footer sticks at the bottom of the page */
-}
-
-/* Heading styles */
-h2,
-h3 {
-  color: #03161e;
-}
-
-h1 {
-  color: #f1fafe;
-  font-size: 15px;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-top: 15px;
-}
-
-/* Links */
-a {
-  color: #d01cb8;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #2980b9;
-}
-
-/* List styles */
-ul {
-  margin: 10px 0;
-}
-
-ul li {
-  margin-bottom: 5px;
 }
