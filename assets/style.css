@@ -7,73 +7,29 @@ body {
   display: flex;
   flex-direction: column; /* Stack header, content, and footer vertically */
   min-height: 100vh; /* Ensures the body covers the full viewport height */
-  background-color: #f9f9f9;
+  background-color: #f1fafe;
+}
+
+/* Container for centering and max width */
+.bannerlevel1 {
+  max-width: 100%;
+  background-color: #506b76;
+  padding: 10px 20px;
+  text-align: left;
+  height: 30px;
+}
+
+.bannerlevel2 {
+  max-width: 100%;
+  background-color: #cedbe0;
+  padding: 10px 20px;
+  text-align: right;
 }
 
 /* Container for centering and max width */
 .container {
   max-width: 80%; /* Restricts the width for large screens */
   margin: 0 auto; /* Centers the content */
-}
-
-/* Tabs styles */
-.tabs {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  gap: 10px;
-}
-
-.tab-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #3498db;
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.tab-button.active,
-.tab-button:hover {
-  background-color: #2980b9;
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-/* Skills bubbles */
-.skills-bubbles {
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.skills-bubbles span {
-  background-color: #3498db;
-  text-align: center;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  white-space: nowrap;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.skills-bubbles span:hover {
-  transform: scale(1.1);
-  background-color: #2980b9;
 }
 
 /* Footer styles */
@@ -92,10 +48,11 @@ footer {
 h1,
 h2,
 h3 {
-  color: #2c3e50;
+  color: #03161e;
 }
 
 h1 {
+  color: #f1fafe;
   font-size: 2.5rem;
 }
 
@@ -128,21 +85,4 @@ ul {
 
 ul li {
   margin-bottom: 5px;
-}
-
-/* Header (Home Section) */
-#home {
-  background: #67a2e1;
-  color: white;
-  padding: 50px 0;
-  text-align: center;
-}
-
-#home h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-#home p {
-  font-size: 1.2rem;
 }
