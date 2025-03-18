@@ -1,7 +1,6 @@
 /* General styles for body and layout */
 body {
   margin: 0px;
-  padding: 0%;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   display: flex;
@@ -11,29 +10,51 @@ body {
   width: 100%;
 }
 
-/* Container for centering and max width */
-.container {
-  max-width: 100%; /* Restricts the width for large screens */
-  margin: 0 auto; /* Centers the content */
-}
-
 header {
+  position: relative;
+  top: 0;
   width: 100%;
-  padding: 4px;
   height: 60px;
 }
 .header1 {
   background-color: #506b76;
   text-align: left;
-  font-size: 16px;
-  height: 40px;
+  vertical-align: middle;
+  padding: 10px;
+  color: #f1fafe;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
 }
-
 .header2 {
   background-color: #cedbe0;
   text-align: right;
-  font-size: 12px;
-  height: 20px;
+  padding: 10px;
+  color: #03161e;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: right;
+  font-weight: bold;
+}
+
+#container {
+  position: relative;
+}
+#column-left {
+  width: 480px;
+  background-color: #03161e;
+}
+#column-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  width: 250px;
+  overflow: auto;
+}
+
+.bodycontainer {
+  position: relative;
 }
 
 /* Footer styles */
@@ -46,4 +67,9 @@ footer {
   bottom: 0;
   width: 100%;
   margin-top: auto; /* Ensures footer sticks at the bottom of the page */
+}
+/* Container for centering and max width */
+.footercontainer {
+  max-width: 100%; /* Restricts the width for large screens */
+  margin: 0 auto; /* Centers the content */
 }

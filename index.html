@@ -6,32 +6,237 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Morgan Rennie - Data Analytics Consultant</title>
     <link rel="stylesheet" href="assets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
-
-  <body>
+  
+  <body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
     <!-- Headers-->
     <header>
-      <div class="header1">
-        Morgan Rennie
-      </div>
+      <div class="header1">Morgan Rennie</div>
 
-      <div classs="header2">
-        Home
-      </div>
-
+      <div class="header2">Home</div>
     </header>
 
-  
+    <main class="flex-1 p-8 w-[80%] mx-auto">
 
+      <!-- Headshot Section-->
+      <section class="flex items-center space-x-6 bg-white p-4 rounded shadow">
+        <div
+          class="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center"
+        >
+          <img
+            src="https://media.licdn.com/dms/image/v2/C5603AQGEI33zWJ-qng/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1564678413444?e=1747267200&v=beta&t=mFyF0SjwRHBxtd9qZBwcBSamMRMReuJ9g3Enil7B1l4"
+            alt="Morgan Rennie Profile"
+            class="w-24 h-24 rounded-full border-2 border-gray-300 shadow-lg"
+          />
+        </div>
+        <div>
+          <h2 class="text-lg font-bold">Morgan Rennie</h2>
+          <p class="text-gray-600">Data Analytics and Engineering</p>
+        </div>
+      </section>
+
+      <!-- Intro to Morgan -->
+      <section class="bg-white p-6 mt-6 shadow rounded">
+        <p>
+          Hey there! Welcome to my little corner of the dataverse. I'm Morgan
+          Rennie, a Data Analytics Consultant over at The Information Lab in
+          London. With a passion for all things data, especially visualisation
+          and ETL, I help businesses make sense of their information and turn it
+          into actionable insights. It's pretty exciting stuff. Outside of
+          crunching numbers, I'm always keen to keep learning, building my
+          portfolio, and love connecting with others in the data community. Have
+          a browse around to see what I'm up to! Reach out for collaborations or
+          a chat!
+        </p>
+      </section>
+
+      <!-- Badges, Certs, GitHub-->
+      <section class="bg-white p-6 mt-6 shadow rounded w-full">
+        <h2 class="font-bold pb-4">What I've been up to</h2>
+        <section class="grid grid-cols-2 gap-4 w-full">
+          <!-- Badges and Certifications -->
+          <section class="bg-white p-6 shadow rounded w-full">
+            <h2 class="font-bold pb-4">Badges and Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                <img
+                    src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main"
+                    alt="Microsoft Certified Associate"
+                    title="Microsoft Certified Associate"
+                    class="h-auto max-w-[100px]"
+                />
+                <img
+                    src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124358512"
+                    alt="Databricks Fundamentals"
+                    title="Databricks Fundamentals"
+                    class="h-auto max-w-[120px]"
+                />
+                <img
+                    src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/123620590"
+                    alt="DBT Fundamentals"
+                    title="DBT Fundamentals"
+                    class="h-auto max-w-[100px]"
+                />
+                <img
+                    src="https://images.credly.com/size/110x110/images/58b06a5f-aee6-4a11-ac53-da36d5f70e8e/image.png"
+                    alt="Tableau Certified Data Analyst"
+                    title="Tableau Certified Data Analyst"
+                    class="h-auto max-w-[115px]"
+                />
+                <img
+                    src="https://images.credly.com/size/340x340/images/14744318-8d6a-49c3-971d-6a4a0f524925/Certification_Designer_Core.png"
+                    alt="Alteryx Designer Core Certification"
+                    title="Alteryx Designer Core Certification"
+                    class="h-auto max-w-[100px]"
+                />
+                <img
+                    src="https://images.credly.com/size/340x340/images/de878f56-515d-40e5-b102-e667192c6f08/Certification_Designer_Advanced.png"
+                    alt="Alteryx Designer Advanced Certification"
+                    title="Alteryx Designer Advanced Certification"
+                    class="h-auto max-w-[100px]"
+                />
+            </div>
+          </section>
+
+          <!-- GitHub-->
+          <section class="bg-white p-6 shadow rounded w-full">
+            <h2 class="font-bold pb-4">GitHub Contributions</h2>
+            <div class="flex justify-center">
+            <img class="flex justify-center"
+              src="https://github-readme-stats.vercel.app/api?username=MorganRennie&show_icons=true&theme=default"
+              />
+            </div>
+            <a class="flex justify-center object-cover mx-auto" href="https://github.com/MorganRennie">
+              <button
+                class="bg-blue-500 text-white mt-5 py-2 px-4 rounded-lg hover:bg-blue-700 hover:shadow-lg transition-all duration-300 ease-in-out"
+              >
+                Navigate to Github
+              </button>
+            </a>
+          </div>
+          </section>
+        </section>
+      </section>
+
+      <!-- Tableau Public Carosel-->
+      <section class="bg-white p-6 mt-6 shadow rounded">
+        <h2 class="font-bold pb-4">Tabelau Public Publications</h2>
+        <div class="w-[80%] max-w">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <!-- Dynamically add slides here -->
+                  <script>
+                      const imageUrls = [
+                          "https://public.tableau.com/static/images/Wh/WherecanmyAviostakeme/WhereCanMyAviosTakeMe/4_3.png",
+                          "https://public.tableau.com/static/images/Th/TheRisingCostsofCyberAttacks/TheRisingCostsofCyberAttacks/4_3.png",
+                          "https://public.tableau.com/static/images/Th/TheHiddenCostofData/TheHiddenCostofData/4_3.png",
+                          "https://public.tableau.com/static/images/St/StavaUserDataDashboard/StravaRouteDashboard/4_3.png",
+                          "https://public.tableau.com/static/images/Pr/PrepAir-SeatDemandAnalysis/PrepAirSeatDemand/4_3.png",
+                          "https://public.tableau.com/static/images/Pr/PrepAir-SQLPortfolio/Home/4_3.png",
+                          "https://public.tableau.com/static/images/WO/WOW2024-1/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Sn/SnowboardLengthCalculator/Length/4_3.png",
+                          "https://public.tableau.com/static/images/St/SteamCataloguingDashboard/MainSheet/4_3.png",
+                          "https://public.tableau.com/static/images/St/StargateEpisodeAnalysis/Landscape/4_3.png",
+                          "https://public.tableau.com/static/images/Ta/TableauFishTankTankeyDiagram/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Ex/ExecutiveSearchMapping/TopSheet/4_3.png",
+                          "https://public.tableau.com/static/images/Bu/BusSpeedDeviation/SpeedDashboard/4_3.png",
+                          "https://public.tableau.com/static/images/Af/AffectofConsumptiononSleep/DASH/4_3.png",
+                          "https://public.tableau.com/static/images/Co/ConsumerCaffeineConsumptionMakeoverMonday2023_9/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2023_8/Dashboard2/4_3.png",
+                          "https://public.tableau.com/static/images/WO/WOW2023-7JitteredBarChart/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2023_4/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/At/AtlasStateEmigration/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Su/SuperstoreReorderBarChartsusingSets/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/WO/WOW2020_2_16728502900880/Dashboard2/4_3.png",
+                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2023_1/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Pa/ParamountPlusDashboard/ActorsandDirectors/4_3.png",
+                          "https://public.tableau.com/static/images/Ma/MakeoverMondayWeek51_16714719077880/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Vi/VideoGameAnalysisDashboardRedesign/Dashboard2/4_3.png",
+                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2022_50/Dashboard/4_3.png",
+                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2022_49/Dashboard1/4_3.png",
+                          "https://public.tableau.com/static/images/Sh/SharkAttackAnalysisSubmission_01/Dash1/4_3.png",
+                          "https://public.tableau.com/static/images/Pr/Project5VideoGameAnalysisv8/Home/4_3.png",
+                          "https://public.tableau.com/static/images/Pr/Project1ApplicationLinkedin/Dash_Main/4_3.png"
+
+                      ];
+                      const hrefs = [
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/WherecanmyAviostakeme/WhereCanMyAviosTakeMe",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/TheRisingCostsofCyberAttacks/TheRisingCostsofCyberAttacks",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/TheHiddenCostofData/TheHiddenCostofData",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/StavaUserDataDashboard/StravaRouteDashboard",
+                        "https://public.tableau.com/static/images/Pr/PrepAir-SeatDemandAnalysis/PrepAirSeatDemand/4_3.png",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/PrepAir-SQLPortfolio/Home",
+                        "https://public.tableau.com/static/images/WO/WOW2024-1/Dashboard1/4_3.png",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SnowboardLengthCalculator/Length",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SteamCataloguingDashboard/MainSheet",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/StargateEpisodeAnalysis/Landscape",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/TableauFishTankTankeyDiagram/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/ExecutiveSearchMapping/TopSheet",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/BusSpeedDeviation/SpeedDashboard",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/AffectofConsumptiononSleep/DASH",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/ConsumerCaffeineConsumptionMakeoverMonday2023_9/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2023_8/Dashboard2",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/WOW2023-7JitteredBarChart/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2023_4/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/AtlasStateEmigration/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SuperstoreReorderBarChartsusingSets/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/WOW2020_2_16728502900880/Dashboard2",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2023_1/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/ParamountPlusDashboard/ActorsandDirectors",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMondayWeek51_16714719077880/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/VideoGameAnalysisDashboardRedesign/Dashboard2",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2022_50/Dashboard",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2022_49/Dashboard1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SharkAttackAnalysisSubmission_01/Dash1",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/Project5VideoGameAnalysisv8/Home",
+                        "https://public.tableau.com/app/profile/morgan.rennie/viz/Project1ApplicationLinkedin/Dash_Main"
+
+                      ];
+                      
+                      document.write(
+                          imageUrls.map((url, index) => `
+                              <div class="swiper-slide">
+                                  <a href="${hrefs[index]}" target="_blank">
+                                      <img src="${url}" class="w-full rounded-lg shadow-lg" />
+                                  </a>
+                              </div>
+                          `).join('')
+                      );
+                  </script>
+              </div>
+              <!-- Pagination and navigation buttons -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+            }
+        });
+    </script>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>© 2024 Morgan Rennie</p>
-      </div>
+    <footer class="fixed bottom-0 left-0 right-0 bg-#CEDBE0 text-center py-4">
+      <p>© 2024 Morgan Rennie</p>
     </footer>
-
-  
-    </script>
   </body>
 </html>
