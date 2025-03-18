@@ -122,7 +122,7 @@
       <!-- Tableau Public Carosel-->
       <section class="bg-white p-6 mt-6 shadow rounded">
         <h2 class="font-bold pb-4">Tabelau Public Publications</h2>
-        <div class="w-[80%] max-w">
+        <div class="w-[100%] max-w ">
           <div class="swiper-container">
               <div class="swiper-wrapper">
                   <!-- Dynamically add slides here -->
@@ -213,23 +213,27 @@
       </div>
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 3,
-                    spaceBetween: 10
-                },
-            }
-        });
+      var swiper = new Swiper('.swiper-container', {
+          loop: false,  // Prevent infinite scrolling
+          slidesPerView: 1,  // Adjust this based on your design
+          spaceBetween: 10,  // Add spacing between slides
+          centeredSlides: false,  // Ensure slides align properly
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+          breakpoints: {
+              640: {
+                  slidesPerView: 3, // Adjust for larger screens
+                  spaceBetween: 10
+              },
+          }
+      });
+
     </script>
       </section>
     </main>

@@ -73,3 +73,43 @@ footer {
   max-width: 100%; /* Restricts the width for large screens */
   margin: 0 auto; /* Centers the content */
 }
+
+.swiper-container {
+  position: relative; /* Keep pagination and buttons inside */
+  width: 100%; /* Ensure it doesn’t expand beyond the container */
+  max-width: 100%; /* Prevent it from exceeding the parent */
+  overflow: hidden; /* Hide overflowing slides */
+  box-sizing: border-box; /* Prevent unwanted expansion */
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0; /* Prevent slides from shrinking */
+  width: auto; /* Let Swiper control width */
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+</style>
