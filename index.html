@@ -3,244 +3,176 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Morgan Rennie - Data Analytics Consultant</title>
+    <title>Morgan Rennie | Data Analytics Portfolio</title>
     <link rel="stylesheet" href="assets/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
-  
-  <body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
-    <!-- Headers-->
-    <header>
-      <div class="header1">Morgan Rennie</div>
-
-      <div class="header2">Home</div>
-    </header>
-
-    <main class="flex-1 p-8 w-[80%] mx-auto">
-
-      <!-- Headshot Section-->
-      <section class="flex items-center space-x-6 bg-white p-4 rounded shadow">
-        <div
-          class="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center"
-        >
-          <img
-            src="https://media.licdn.com/dms/image/v2/C5603AQGEI33zWJ-qng/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1564678413444?e=1747267200&v=beta&t=mFyF0SjwRHBxtd9qZBwcBSamMRMReuJ9g3Enil7B1l4"
-            alt="Morgan Rennie Profile"
-            class="w-24 h-24 rounded-full border-2 border-gray-300 shadow-lg"
-          />
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-name">Morgan Rennie</div>
+          <div class="brand-tag">Data Analytics Consultant</div>
         </div>
-        <div>
-          <h2 class="text-lg font-bold">Morgan Rennie</h2>
-          <p class="text-gray-600">Data Analytics and Engineering</p>
-        </div>
-      </section>
-      <!-- Intro to Morgan -->
-        <section class="bg-white p-6 mt-6 shadow rounded">
-          <p>
-            Hey there! Welcome to my little corner of the dataverse. I'm Morgan
-            Rennie, a Data Analytics Consultant over at The Information Lab in
-            London. With a passion for all things data, especially visualisation
-            and ETL, I help businesses make sense of their information and turn it
-            into actionable insights. It's pretty exciting stuff. Outside of
-            crunching numbers, I'm always keen to keep learning, building my
-            portfolio, and love connecting with others in the data community. Have
-            a browse around to see what I'm up to! Reach out for collaborations or
-            a chat!
-          </p>
-        </section>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="page-template.html">Page Template</a>
+          <a href="blog-template.html">Blog Template</a>
+          <a href="https://github.com/MorganRennie" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
 
-        <!-- Badges, Certs, GitHub-->
-        <section class="bg-white p-6 mt-6 shadow rounded w-full">
-          <h2 class="font-bold pb-4">What I've been up to</h2>
-          <section class="grid grid-cols-2 gap-4 w-full">
-            <!-- Badges and Certifications -->
-            <section class="bg-white p-6 shadow rounded w-full">
-              <h2 class="font-bold pb-4">Badges and Certifications</h2>
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-                  <img
-                      src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg?branch=main"
-                      alt="Microsoft Certified Associate"
-                      title="Microsoft Certified Associate"
-                      class="h-auto max-w-[100px]"
-                  />
-                  <img
-                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124358512"
-                      alt="Databricks Fundamentals"
-                      title="Databricks Fundamentals"
-                      class="h-auto max-w-[120px]"
-                  />
-                  <img
-                      src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/123620590"
-                      alt="DBT Fundamentals"
-                      title="DBT Fundamentals"
-                      class="h-auto max-w-[100px]"
-                  />
-                  <img
-                      src="https://images.credly.com/size/110x110/images/58b06a5f-aee6-4a11-ac53-da36d5f70e8e/image.png"
-                      alt="Tableau Certified Data Analyst"
-                      title="Tableau Certified Data Analyst"
-                      class="h-auto max-w-[115px]"
-                  />
-                  <img
-                      src="https://images.credly.com/size/340x340/images/14744318-8d6a-49c3-971d-6a4a0f524925/Certification_Designer_Core.png"
-                      alt="Alteryx Designer Core Certification"
-                      title="Alteryx Designer Core Certification"
-                      class="h-auto max-w-[100px]"
-                  />
-                  <img
-                      src="https://images.credly.com/size/340x340/images/de878f56-515d-40e5-b102-e667192c6f08/Certification_Designer_Advanced.png"
-                      alt="Alteryx Designer Advanced Certification"
-                      title="Alteryx Designer Advanced Certification"
-                      class="h-auto max-w-[100px]"
-                  />
-              </div>
-            </section>
-
-            <!-- GitHub-->
-            <section class="bg-white p-6 shadow rounded w-full">
-              <h2 class="font-bold pb-4">GitHub Contributions</h2>
-              <div class="flex justify-center">
-              <img class="flex justify-center"
-                src="https://github-readme-stats.vercel.app/api?username=MorganRennie&show_icons=true&theme=default"
-                />
-              </div>
-              <a class="flex justify-center object-cover mx-auto" href="https://github.com/MorganRennie">
-                <button
-                  class="bg-blue-500 text-white mt-5 py-2 px-4 rounded-lg hover:bg-blue-700 hover:shadow-lg transition-all duration-300 ease-in-out"
-                >
-                  Navigate to Github
-                </button>
-              </a>
+      <main class="content">
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="eyebrow">Portfolio • CV • Data storytelling</p>
+            <h1>Helping teams turn raw data into confident decisions.</h1>
+            <p class="hero-description">
+              I’m Morgan Rennie, a data analytics consultant based in London. I
+              specialise in visualisation, ETL, modern analytics pipelines, and
+              presenting actionable insight clearly for business stakeholders.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="page-template.html">View CV Template</a>
+              <a class="button button-secondary" href="blog.html">Browse Blog</a>
             </div>
-            </section>
-          </section>
+          </div>
+          <div class="hero-card">
+            <img class="hero-image" src="https://media.licdn.com/dms/image/v2/C5603AQGEI33zWJ-qng/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1564678413444?e=1747267200&v=beta&t=mFyF0SjwRHBxtd9qZBwcBSamMRMReuJ9g3Enil7B1l4" alt="Morgan Rennie profile" />
+            <div class="hero-summary">
+              <p><strong>Current focus:</strong> analytics delivery, dashboard reporting, automation, and digital transformation.</p>
+              <p><strong>Top tools:</strong> Tableau, Power BI, dbt, Alteryx, SQL, Python, Snowflake, AWS.</p>
+            </div>
+          </div>
         </section>
 
-        <!-- Tableau Public Carosel-->
-        <section class="bg-white p-6 mt-6 shadow rounded">
-        <h2 class="font-bold pb-4">Tabelau Public Publications</h2>
-        <div class="w-[100%] max-w ">
-          <div class="swiper-container">
-              <div class="swiper-wrapper">
-                  <!-- Dynamically add slides here -->
-                  <script>
-                      const imageUrls = [
-                          "https://public.tableau.com/static/images/Wh/WherecanmyAviostakeme/WhereCanMyAviosTakeMe/4_3.png",
-                          "https://public.tableau.com/static/images/Th/TheRisingCostsofCyberAttacks/TheRisingCostsofCyberAttacks/4_3.png",
-                          "https://public.tableau.com/static/images/Th/TheHiddenCostofData/TheHiddenCostofData/4_3.png",
-                          "https://public.tableau.com/static/images/St/StavaUserDataDashboard/StravaRouteDashboard/4_3.png",
-                          "https://public.tableau.com/static/images/Pr/PrepAir-SeatDemandAnalysis/PrepAirSeatDemand/4_3.png",
-                          "https://public.tableau.com/static/images/Pr/PrepAir-SQLPortfolio/Home/4_3.png",
-                          "https://public.tableau.com/static/images/WO/WOW2024-1/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Sn/SnowboardLengthCalculator/Length/4_3.png",
-                          "https://public.tableau.com/static/images/St/SteamCataloguingDashboard/MainSheet/4_3.png",
-                          "https://public.tableau.com/static/images/St/StargateEpisodeAnalysis/Landscape/4_3.png",
-                          "https://public.tableau.com/static/images/Ta/TableauFishTankTankeyDiagram/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Ex/ExecutiveSearchMapping/TopSheet/4_3.png",
-                          "https://public.tableau.com/static/images/Bu/BusSpeedDeviation/SpeedDashboard/4_3.png",
-                          "https://public.tableau.com/static/images/Af/AffectofConsumptiononSleep/DASH/4_3.png",
-                          "https://public.tableau.com/static/images/Co/ConsumerCaffeineConsumptionMakeoverMonday2023_9/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2023_8/Dashboard2/4_3.png",
-                          "https://public.tableau.com/static/images/WO/WOW2023-7JitteredBarChart/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2023_4/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/At/AtlasStateEmigration/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Su/SuperstoreReorderBarChartsusingSets/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/WO/WOW2020_2_16728502900880/Dashboard2/4_3.png",
-                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2023_1/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Pa/ParamountPlusDashboard/ActorsandDirectors/4_3.png",
-                          "https://public.tableau.com/static/images/Ma/MakeoverMondayWeek51_16714719077880/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Vi/VideoGameAnalysisDashboardRedesign/Dashboard2/4_3.png",
-                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2022_50/Dashboard/4_3.png",
-                          "https://public.tableau.com/static/images/Ma/MakeoverMonday2022_49/Dashboard1/4_3.png",
-                          "https://public.tableau.com/static/images/Sh/SharkAttackAnalysisSubmission_01/Dash1/4_3.png",
-                          "https://public.tableau.com/static/images/Pr/Project5VideoGameAnalysisv8/Home/4_3.png",
-                          "https://public.tableau.com/static/images/Pr/Project1ApplicationLinkedin/Dash_Main/4_3.png"
-
-                      ];
-                      const hrefs = [
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/WherecanmyAviostakeme/WhereCanMyAviosTakeMe",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/TheRisingCostsofCyberAttacks/TheRisingCostsofCyberAttacks",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/TheHiddenCostofData/TheHiddenCostofData",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/StavaUserDataDashboard/StravaRouteDashboard",
-                        "https://public.tableau.com/static/images/Pr/PrepAir-SeatDemandAnalysis/PrepAirSeatDemand/4_3.png",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/PrepAir-SQLPortfolio/Home",
-                        "https://public.tableau.com/static/images/WO/WOW2024-1/Dashboard1/4_3.png",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SnowboardLengthCalculator/Length",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SteamCataloguingDashboard/MainSheet",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/StargateEpisodeAnalysis/Landscape",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/TableauFishTankTankeyDiagram/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/ExecutiveSearchMapping/TopSheet",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/BusSpeedDeviation/SpeedDashboard",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/AffectofConsumptiononSleep/DASH",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/ConsumerCaffeineConsumptionMakeoverMonday2023_9/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2023_8/Dashboard2",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/WOW2023-7JitteredBarChart/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2023_4/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/AtlasStateEmigration/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SuperstoreReorderBarChartsusingSets/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/WOW2020_2_16728502900880/Dashboard2",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2023_1/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/ParamountPlusDashboard/ActorsandDirectors",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMondayWeek51_16714719077880/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/VideoGameAnalysisDashboardRedesign/Dashboard2",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2022_50/Dashboard",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/MakeoverMonday2022_49/Dashboard1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/SharkAttackAnalysisSubmission_01/Dash1",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/Project5VideoGameAnalysisv8/Home",
-                        "https://public.tableau.com/app/profile/morgan.rennie/viz/Project1ApplicationLinkedin/Dash_Main"
-
-                      ];
-                      
-                      document.write(
-                          imageUrls.map((url, index) => `
-                              <div class="swiper-slide">
-                                  <a href="${hrefs[index]}" target="_blank">
-                                      <img src="${url}" class="w-full rounded-lg shadow-lg" />
-                                  </a>
-                              </div>
-                          `).join('')
-                      );
-                  </script>
-              </div>
-              <!-- Pagination and navigation buttons -->
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+        <section class="section-summary">
+          <div class="section-head">
+            <span class="section-label">Overview</span>
+            <h2>What I do</h2>
           </div>
-      </div>
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-          loop: false,  // Prevent infinite scrolling
-          slidesPerView: 1,  // Adjust this based on your design
-          spaceBetween: 10,  // Add spacing between slides
-          centeredSlides: false,  // Ensure slides align properly
-          pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-          },
-          navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-          },
-          breakpoints: {
-              640: {
-                  slidesPerView: 3, // Adjust for larger screens
-                  spaceBetween: 10
-              },
-          }
-      });
+          <p>
+            I build end-to-end analysis solutions that combine analytics engineering,
+            dashboarding, and storytelling. I help business users move from manual
+            reporting to self-serve workflows while keeping governance and accuracy
+            at the centre of every project.
+          </p>
+          <ul class="feature-list">
+            <li>Data visualisation & dashboard design</li>
+            <li>ETL / analytics engineering</li>
+            <li>Project delivery, stakeholder communication, and training</li>
+            <li>Blogging about data, tooling, and practical learnings</li>
+          </ul>
+        </section>
 
-    </script>
-      </section>
+        <section class="cards-grid">
+          <article class="info-card">
+            <h3>Featured projects</h3>
+            <p>
+              A selection of current and planned work from analytics automation to
+              client-facing dashboards and data-led storytelling.
+            </p>
+            <ul>
+              <li>Project Strava: activity analytics & route performance dashboard</li>
+              <li>Charity reporting: donation tracking and impact visualisation</li>
+              <li>Worldwide data stories: global dataset exploration and storytelling</li>
+              <li>Hire Me package: CV, certification reel, and consultancy showcase</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Certifications & skills</h3>
+            <p>
+              I maintain practical expertise across modern analytics tools and
+              certifications that support trusted delivery.
+            </p>
+            <div class="skill-tags">
+              <span>Tableau</span>
+              <span>Power BI</span>
+              <span>dbt</span>
+              <span>Alteryx</span>
+              <span>SQL</span>
+              <span>Python</span>
+              <span>Snowflake</span>
+              <span>AWS</span>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>Blog themes</h3>
+            <p>
+              I write about learning, troubleshooting, certifications, and project
+              insights with a focus on practical improvement.
+            </p>
+            <ul>
+              <li>Reflective work logs & TIL notes</li>
+              <li>Certification progress and tooling comparisons</li>
+              <li>Automation and analytics engineering stories</li>
+              <li>Project case studies and dashboard decisions</li>
+            </ul>
+          </article>
+        </section>
 
-    </main>
+        <section class="section-summary section-dark">
+          <div class="section-head">
+            <span class="section-label">Project preview</span>
+            <h2>Selected work in progress</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>Strava analytics dashboard</h3>
+              <p>Transform Strava activity data into route insights, effort summaries, and performance trends.</p>
+            </article>
+            <article class="project-card">
+              <h3>Mailchimp to Snowflake pipeline</h3>
+              <p>Automate Mailchimp campaign and email activity ingestion into S3 and Snowflake for analytics.</p>
+            </article>
+            <article class="project-card">
+              <h3>Mailchimp to Snowflake pipeline</h3>
+              <p>Automate Mailchimp campaign and email activity ingestion into S3 and Snowflake for analytics.</p>
+            </article>
+            <article class="project-card">
+              <h3>Charity donation visualisation</h3>
+              <p>Scrape donation data and create a story-led dashboard to show giving impact and trends.</p>
+            </article>
+            <article class="project-card">
+              <h3>Worldwide data storytelling</h3>
+              <p>Aggregate travel, location, and event data into an exploratory analytics experience.</p>
+            </article>
+            <article class="project-card">
+              <h3>Consulting hire-me package</h3>
+              <p>Build a professional CV page, certification reel, and project showcase for direct clients.</p>
+            </article>
+          </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="fixed bottom-0 left-0 right-0 bg-#CEDBE0 text-center py-4">
-      <p>© 2024 Morgan Rennie</p>
-    </footer>
+        <section class="section-summary">
+          <div class="section-head">
+            <span class="section-label">Blog</span>
+            <h2>Latest insights</h2>
+          </div>
+          <div class="blog-preview-grid">
+            <article class="blog-card">
+              <h3>How I structure analytics projects</h3>
+              <p>Practical steps I use to move from data intake to delivery-ready dashboards.</p>
+              <a class="link" href="blog-template.html">View template</a>
+            </article>
+            <article class="blog-card">
+              <h3>Building a data-focused portfolio</h3>
+              <p>How to present your analytics work clearly with project summaries and demonstrations.</p>
+              <a class="link" href="page-template.html">View template</a>
+            </article>
+            <article class="blog-card">
+              <h3>Learning from certification paths</h3>
+              <p>Notes on Tableau, dbt, Power BI, and analytics engineering progress.</p>
+              <a class="link" href="blog.html">Read more</a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Morgan Rennie • Built with static HTML & CSS for GitHub Pages</p>
+      </footer>
+    </div>
   </body>
 </html>

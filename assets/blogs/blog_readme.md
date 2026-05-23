@@ -1,9 +1,18 @@
 Asset area for blogging
 
-each blog utilizes a folder with format determining hierarchy of life/work followed by 4 digits denoting its breakdown. [L/W][xxxx]
+each blog uses a folder structure to keep posts organized by category and ID. Use the format:
 
-within the folder is the following:
+  [L/W][xxxx]
 
-blog_id.txt
-blog_id.html
-./assets/blog_id_xxx.png
+Where:
+- `L` indicates a Life post
+- `W` indicates a Work post
+- `xxxx` is a four-digit identifier
+
+Inside each blog folder include:
+
+- `blog_id.txt` — short summary or metadata for the post
+- `blog_id.html` — the actual blog post page
+- `assets/blog_id_xxx.png` — optional featured image or related illustration
+
+Use `blog-template.html` at the repository root as the starting point for new posts. Create a new folder under `assets/blogs/`, then duplicate and edit the template to make a fresh article page.

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mailchimp to Snowflake Pipeline | Morgan Rennie</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-name">Mailchimp to Snowflake Pipeline</div>
+          <div class="brand-tag">Data extraction, staging, and analytics</div>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="page-template.html">Page Template</a>
+          <a href="blog-template.html">Blog Template</a>
+          <a href="https://github.com/MorganRennie/des2_mailchimp" target="_blank" rel="noreferrer">Repo</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="eyebrow">Project • Data pipeline</p>
+            <h1>Mailchimp to Snowflake extraction pipeline</h1>
+            <p class="hero-description">
+              A secure, automated pipeline to extract Mailchimp campaign and email activity data,
+              stage it in AWS S3, and load it into Snowflake for analytics using Python, Airbyte, dbt,
+              and Kestra.
+            </p>
+          </div>
+          <div class="hero-card">
+            <div class="hero-summary">
+              <p><strong>Key tools:</strong> Mailchimp API, Python, AWS S3, Snowflake, dbt, Airbyte, Kestra, Docker.</p>
+              <p><strong>Outcome:</strong> robust data ingestion, automated orchestration, and composable analytics.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-summary section-dark">
+          <div class="section-head">
+            <span class="section-label">Mission</span>
+            <h2>Project goal</h2>
+          </div>
+          <p>
+            Build a robust, secure data pipeline to extract campaign data from Mailchimp,
+            store it in AWS S3, and process it into Snowflake. Orchestrate the pipeline using Kestra.
+          </p>
+        </section>
+
+        <section class="section-summary">
+          <div class="section-head">
+            <span class="section-label">Architecture</span>
+            <h2>Pipeline overview</h2>
+          </div>
+          <ul class="feature-list">
+            <li>Mailchimp API extraction with Python and a polling process for new campaign data.</li>
+            <li>AWS S3 staging layer with KMS encryption and structured bucket paths.</li>
+            <li>Snowflake external stage and Snowpipe integration for near-real-time file ingestion.</li>
+            <li>dbt models to transform Mailchimp campaign and email response data into analytics-ready tables.</li>
+            <li>Kestra orchestration on Docker containers with a nightly cron trigger.</li>
+          </ul>
+        </section>
+
+        <section class="project-grid">
+          <article class="project-card">
+            <h3>Extraction</h3>
+            <p>
+              Python connects to the Mailchimp API to extract campaign and email activity records,
+              unpacks nested JSON, and writes new files to S3 only when new data arrives.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Staging</h3>
+            <p>
+              Files are staged in AWS S3 with encryption and structured folders, validating delivery
+              and ensuring secure storage before Snowflake ingest.
+            </p>
+          </article>
+        </section>
+
+        <section class="project-grid" style="margin-top: 1.5rem;">
+          <article class="project-card">
+            <h3>Snowflake & dbt</h3>
+            <p>
+              Snowflake is connected to S3 through storage integration and Snowpipe. dbt builds the
+              raw, silver, and final models required for analytics and joining Mailchimp data with other sources.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Orchestration</h3>
+            <p>
+              Kestra manages the full pipeline on Docker with a midnight cron schedule, ensuring reliable daily refreshes.
+            </p>
+          </article>
+        </section>
+
+        <section class="section-summary section-dark" style="margin-top: 1.5rem;">
+          <div class="section-head">
+            <span class="section-label">Project checklist</span>
+            <h2>Key execution steps</h2>
+          </div>
+          <ul class="feature-list">
+            <li>Configure AWS environment: KMS key, encrypted S3 bucket, IAM users, and secure credentials.</li>
+            <li>Build Airbyte pipeline to export Mailchimp campaign and email activity data to Parquet in S3.</li>
+            <li>Develop Python extraction logic, polling for new Mailchimp content and uploading data with boto3.</li>
+            <li>Connect Snowflake with S3 and define external stages, file formats, and Snowpipe ingestion.</li>
+            <li>Use dbt to model Mailchimp and email response data, flatten nested structures, and support final analytics joins.</li>
+            <li>Automate the pipeline using Kestra and Docker with encoded secret handling and scheduled execution.</li>
+          </ul>
+        </section>
+
+        <section class="section-summary" style="margin-top: 1.5rem;">
+          <div class="section-head">
+            <span class="section-label">More details</span>
+            <h2>Where to find the code</h2>
+          </div>
+          <p>
+            The full implementation is available in the repository at
+            <a href="https://github.com/MorganRennie/des2_mailchimp" target="_blank" rel="noreferrer">github.com/MorganRennie/des2_mailchimp</a>.
+          </p>
+          <a class="button button-secondary" href="projects.html">Back to projects</a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Morgan Rennie • Mailchimp project</p>
+      </footer>
+    </div>
+  </body>
+</html>

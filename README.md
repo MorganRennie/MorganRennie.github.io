@@ -4,6 +4,17 @@ Work in progress website for displaying blogs, projects, and CV.
 
 https://morganrennie.github.io/
 
+### Current site structure
+- `index.html` — dark-themed homepage and portfolio landing page
+- `projects.html` — dedicated projects page for analytics and automation work
+- `blog.html` — blog listing page for post previews and structure guidance
+- `page-template.html` — reusable template for new project/CV/about pages
+- `blog-template.html` — reusable template for new blog posts
+- `assets/style.css` — shared dark theme CSS for the entire site
+- `assets/blogs/blog_readme.md` — blog folder structure instructions
+- `mailchimp-project.html` — Mailchimp extraction project page
+- `assets/blogs/W0001/blog_id.html` — sample blog post page
+
 ##### Prioritisaiton:
   - Website template
   - Charity Blog - scrape data from just giving page, use donations to populate chart. 

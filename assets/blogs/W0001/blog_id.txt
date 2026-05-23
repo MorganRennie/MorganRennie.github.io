@@ -1,0 +1,1 @@
+How I structure analytics projects from problem definition to delivery-ready dashboards.

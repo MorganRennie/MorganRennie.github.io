@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Morgan Rennie</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <div class="brand-name">Blog</div>
+          <div class="brand-tag">Data, learning, and project stories</div>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="page-template.html">Page Template</a>
+          <a href="blog-template.html">Blog Template</a>
+          <a href="https://github.com/MorganRennie" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
+
+      <main class="content">
+        <section class="section-summary">
+          <div class="section-head">
+            <span class="section-label">Posts</span>
+            <h2>Latest blog entries</h2>
+          </div>
+          <p>
+            A place to share your thinking on analytics, tools, certifications,
+            and project insights. Copy the blog post template for new articles.
+          </p>
+        </section>
+
+        <section class="blog-preview-grid">
+          <article class="blog-card">
+            <div>
+            <span class="section-label">Work</span>
+            <h3>How I structure analytics projects</h3>
+            <p>A practical guide for moving analytics work from problem definition to delivery.</p>
+          </div>
+          <a class="link" href="assets/blogs/W0001/blog_id.html">Read post</a>
+        </article>
+
+          <article class="blog-card">
+            <div>
+              <span class="section-label">Project</span>
+              <h3>Project Strava: building activity analytics</h3>
+              <p>How I turn Strava activity data into performance dashboards with insight for runners and cyclists.</p>
+          </article>
+
+          <article class="blog-card">
+            <div>
+              <span class="section-label">Guide</span>
+              <h3>Designing a portfolio for clients</h3>
+              <p>The page structure and content strategy I use when creating portfolio and CV sites.</p>
+            </div>
+            <a class="link" href="page-template.html">View page template</a>
+          </article>
+        </section>
+
+        <section class="section-summary section-dark" style="margin-top: 2rem;">
+          <div class="section-head">
+            <span class="section-label">Blog folder structure</span>
+            <h2>How to add a new post</h2>
+          </div>
+          <p>
+            Create a new folder under <code>assets/blogs/</code> using the pattern
+            <code>W0001</code> for work or <code>L0001</code> for life posts.
+          </p>
+          <ul>
+            <li><code>blog_id.txt</code> — short summary or post metadata</li>
+            <li><code>blog_id.html</code> — the actual post content page</li>
+            <li><code>assets/blog_id_xxx.png</code> — featured image or related illustration</li>
+          </ul>
+          <p>
+            Duplicate <code>blog-template.html</code> to start a new post, then link to it from this listing page.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Morgan Rennie • Blog</p>
+      </footer>
+    </div>
+  </body>
+</html>
