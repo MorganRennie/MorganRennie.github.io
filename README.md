@@ -16,7 +16,6 @@ https://morganrennie.github.io/
 - `assets/blogs/W0001/blog_id.html` — sample blog post page
 
 ##### Prioritisaiton:
-  - Website template
   - Charity Blog - scrape data from just giving page, use donations to populate chart. 
   - Write profile
   - Document bike bag. 
